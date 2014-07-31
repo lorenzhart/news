@@ -41,7 +41,7 @@ blockquote.right{margin-left:20px; text-align:left; margin-right:0; width:33%; f
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icomoon-"] {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -55,13 +55,13 @@ blockquote.right{margin-left:20px; text-align:left; margin-right:0; width:33%; f
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon-line:before {
+.icomoon-icon-icon-line:before {
 	content: "\e602";
 }
-.icon-icon-twitter:before {
+.icomoon-icon-icon-twitter:before {
 	content: "\e601";
 }
-.icon-icon-facebook:before {
+.icomoon-icon-icon-facebook:before {
 	content: "\e600";
 }
 /*----EndCustomIconFont----*/
