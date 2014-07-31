@@ -44,7 +44,7 @@
                     <div class="logo">
                         <a href="<?php echo home_url(); ?>"><img src="<?php if($admin_data['logo']){echo esc_html($admin_data['logo']);} else{ echo get_template_directory_uri(); ?>/framework/img/logo.png<?php } ?>" alt="<?php bloginfo('description'); ?>" /></a>
                     </div>
-                    
+                    <!--
                     <?php if($admin_data['header_search']){ ?>
                     <div class="search">
                         <form action="<?php echo home_url(); ?>/" method="get">
@@ -53,18 +53,18 @@
                         </form>
                     </div>
                     <?php } ?>
-                    
+                    -- >
                     
                     <?php $main = array(
 						'theme_location'  => 'main_menu',
 						'menu_class'      => 'sf-menu', 
 						'menu_id'         => 'menu-main',);
 					?>
-                    <!-- Nav -->
+                    <!-- Nav
                     <nav id="nav">
                         <?php if(has_nav_menu('main_menu')){ wp_nav_menu( $main );} else{echo '<ul class="sf-menu"><li><a href="">No menu assigned!</a></li></ul>';}?>
                     </nav>
-                    <!-- /Nav -->
+                    /Nav -->
                 </div>
             </div>
         </header>

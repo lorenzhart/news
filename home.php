@@ -17,6 +17,7 @@
             <div class="container">
             	<!-- Main Content -->
                 <div class="main-content <?php if($admin_data['home_style'] == "home_leftsidebar"){?> left-sidebar <?php } ?>">
+                	<?php get_template_part('article'); ?>
                 	<?php 
 						
 						$layout = $admin_data['homepage_moduls']['enabled'];
@@ -36,6 +37,9 @@
 							break;
 							
 							case 'module_four':  get_template_part( 'module/module-4' );
+							break;
+
+							case 'module_five':  get_template_part( 'module/module-5' );
 							break;
 
 							}	

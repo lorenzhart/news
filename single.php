@@ -382,13 +382,6 @@
                         <?php endif; ?>
                         <?php } ?>
                         
-                        
-                        
-                        <!-- Comments -->
-                        <div class="comments">
-                        	<?php wp_reset_query(); ?>
-                            <?php comments_template(); ?>
-                        </div>
 
                     </div>
                     <!-- /Single -->

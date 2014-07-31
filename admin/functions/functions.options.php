@@ -31,7 +31,8 @@ if (!function_exists('of_options'))
 				"placebo" 		=> "placebo", //REQUIRED!
 				"module_two"	=> "Module Two",
 				"module_three"	=> "Module Three",
-				"module_four"	=> "Module Four",	
+				"module_four"	=> "Module Four",
+				"module_five"	=> "Module Five",	
 			), 
 			"enabled" => array (
 				"placebo" 		=> "placebo", //REQUIRED!
@@ -583,6 +584,33 @@ $of_options[] = array( 	"name" 		=> __('Number of Posts', 'framework'),
 						"type" 		=> "sliderui" 
 );
 
+/*----------------------------------------------------------------------------------- MODULE-5 SETTINGS */
+$of_options[] = array( 	"name" 		=> "Module-5 Settings",
+						"type" 		=> "heading"
+);
+$of_options[] = array( 	"name" 		=> __('Select Category For Module-5', 'framework'),
+						"desc" 		=> __('Posts created under choosen category will be displayed in module-5 on homepage', 'framework'),
+						"id" 		=> "m5_category",
+						"std" 		=> "Select a category:",
+						"type" 		=> "select",
+						"options" 	=> $of_categories
+);
+$of_options[] = array( 	"name" 		=> __('Max Number of Posts', 'framework'),
+						"desc" 		=> __('Default value: 2', 'framework'),
+						"id" 		=> "m5_maxnumberofposts",
+						"std" 		=> "2",
+						"min" 		=> "0",
+						"step"		=> "1",
+						"max" 		=> "15",
+						"type" 		=> "sliderui" 
+);
+$of_options[] = array( 	"name" 		=> __('Carousel Direction', 'framework'),
+						"desc" 		=> "",
+						"id" 		=> "m3_carousel_direction",
+						"std" 		=> "left",
+						"type" 		=> "select",
+						"options" 	=> array("left","right")
+);
 
 
 /*----------------------------------------------------------------------------------- SLIDER */
